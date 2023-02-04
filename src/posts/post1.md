@@ -2,6 +2,7 @@
 title: Travel to Alpes
 category: winter
 url: winter-alpes
+image: ../images/gatsby-icon.png
 ---
 
 # Travel to Alpes

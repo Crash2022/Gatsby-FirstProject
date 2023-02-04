@@ -2,6 +2,7 @@
 title: Travel to Switzerland
 category: winter
 url: winter-switzerland
+image: ../images/gatsby-icon.png
 ---
 
 # Travel to Switzerland

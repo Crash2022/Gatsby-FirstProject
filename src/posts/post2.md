@@ -2,6 +2,7 @@
 title: Travel to Japan
 category: winter
 url: winter-japan
+image: ../images/gatsby-icon.png
 ---
 
 # Travel to Japan
