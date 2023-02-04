@@ -1,24 +1,21 @@
 import * as React from "react"
-import {Link, graphql, useStaticQuery} from "gatsby"
-import GatsbyIcon from '../images/gatsby-icon.png'
+import {Link} from "gatsby"
 
 const Header = ({siteTitle}) => {
 
     // статический запрос
-    const {site} = useStaticQuery(
-        graphql`
-            query {
-                site {
-                    siteMetadata {
-                        title
-                        author
-                    }
-                }
-            }
-        `
-    )
-
-    console.log(site)
+    // const {site} = useStaticQuery(
+    //     graphql`
+    //         query {
+    //             site {
+    //                 siteMetadata {
+    //                     title
+    //                     author
+    //                 }
+    //             }
+    //         }
+    //     `
+    // )
 
     return (
         <header
@@ -37,8 +34,7 @@ const Header = ({siteTitle}) => {
                     textDecoration: `none`,
                 }}
             >
-                {/*{siteTitle}*/}
-                <img src={GatsbyIcon} alt='gatsby-icon'/>
+                {siteTitle}
             </Link>
             <img
                 alt="Gatsby logo"
