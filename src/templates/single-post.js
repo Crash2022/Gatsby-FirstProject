@@ -1,8 +1,8 @@
-import React from 'react';
-import {Link, graphql} from 'gatsby';
-import {GatsbyImage, getImage} from 'gatsby-plugin-image';
-import Layout from '../components/layout';
-import Seo from '../components/seo';
+import React from 'react'
+import {Link, graphql} from 'gatsby'
+import {GatsbyImage, getImage} from 'gatsby-plugin-image'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 const SinglePost = ({data}) => {
 
@@ -27,7 +27,7 @@ const SinglePost = ({data}) => {
     );
 };
 
-// export const Head = () => <Seo title={title}/>;
+// export const Head = () => <Seo title={title}/>
 
 export default SinglePost;
 

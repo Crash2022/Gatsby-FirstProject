@@ -1,8 +1,8 @@
-import React from 'react';
-import {Link, graphql} from 'gatsby';
-import {StaticImage, GatsbyImage, getImage} from 'gatsby-plugin-image';
-import Layout from '../components/layout';
-import Seo from '../components/seo';
+import React from 'react'
+import {Link, graphql} from 'gatsby'
+import {StaticImage, GatsbyImage, getImage} from 'gatsby-plugin-image'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 // import * as styles from '../components/index.module.css';
 
@@ -159,7 +159,8 @@ const IndexPage = ({data}) => {
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home"/>;
+
+export const Head = () => <Seo title='Home'/>
 
 export default IndexPage;
 
@@ -181,4 +182,4 @@ export const query = graphql`
         }
     }
  }
-`;
+`
