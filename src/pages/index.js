@@ -162,7 +162,7 @@ const IndexPage = ({data}) => {
 
 export const Head = () => <Seo title='Home'/>
 
-export default IndexPage;
+export default IndexPage
 
 export const query = graphql`
     query MainPage {
@@ -182,4 +182,4 @@ export const query = graphql`
         }
     }
  }
-`
+`;

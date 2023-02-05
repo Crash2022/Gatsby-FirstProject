@@ -14,9 +14,6 @@ const SinglePost = ({data}) => {
         <Layout>
             <div className='singlePost_box'>
                 <Seo title={title}/>
-                {/*<div>*/}
-                {/*    <h1>{title}</h1>*/}
-                {/*</div>*/}
                 <div>
                     <GatsbyImage alt={title} image={img}/>
                 </div>
@@ -47,4 +44,4 @@ export const query = graphql`
             }
         }
     }
-`
+`;
