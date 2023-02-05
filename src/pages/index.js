@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {Link, graphql} from 'gatsby';
 import {StaticImage, GatsbyImage, getImage} from 'gatsby-plugin-image';
 import Layout from '../components/layout';
@@ -164,16 +164,16 @@ export const Head = () => <Seo title="Home"/>;
 export default IndexPage;
 
 export const query = graphql`
-  query MainPage {
-    allMarkdownRemark {
-        nodes {
-            frontmatter {
+    query MainPage {
+        allMarkdownRemark {
+            nodes {
+                frontmatter {
                 category
                 title
                 url
                 image {
                     childImageSharp {
-                    gatsbyImageData(width: 200, formats: [AUTO, AVIF], placeholder: BLURRED)
+                        gatsbyImageData(width: 100, formats: [AUTO, AVIF], placeholder: BLURRED)
                     }
                 }
             }

@@ -18,6 +18,8 @@
   })
 }*/
 
+const path = require('path')
+
 exports.createPages = async ({graphql, actions}) => {
     const {data} = await graphql(`
         query Posts {
@@ -36,7 +38,7 @@ exports.createPages = async ({graphql, actions}) => {
         const { url, category } = node.frontmatter
         actions.createPage({
             path: `/${category}/${url}`,
-            component: require.resolve('./src/templates/single-post.js'),
+            component: path.resolve('./src/templates/single-post.js'),
             context: { url },
         })
     })
