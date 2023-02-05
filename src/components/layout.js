@@ -5,22 +5,21 @@
  * See: https://www.gatsbyjs.com/docs/how-to/querying-data/use-static-query/
  */
 
-import React from 'react';
-import {useStaticQuery, graphql} from 'gatsby';
-
-import Header from './header';
-import './layout.css';
+import React from 'react'
+import {useStaticQuery, graphql} from 'gatsby'
+import Header from './header'
+import './layout.css'
 
 const Layout = ({children}) => {
     const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+        query SiteTitleQuery {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
         }
-      }
-    }
-  `);
+  `)
 
     return (
         <>
@@ -44,10 +43,7 @@ const Layout = ({children}) => {
                     <div>
                         © {new Date().getFullYear()} &middot; Built with
                     </div>
-                    <div>
-                        {` `}
-                    </div>
-                    <div>
+                    <div style={{marginLeft: '5px'}}>
                         <a href="https://www.gatsbyjs.com">Gatsby</a>
                     </div>
                 </footer>
@@ -56,4 +52,4 @@ const Layout = ({children}) => {
     );
 };
 
-export default Layout;
+export default Layout

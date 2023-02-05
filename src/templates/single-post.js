@@ -7,7 +7,7 @@ import Seo from '../components/seo'
 const SinglePost = ({data}) => {
 
     const {html} = data.markdownRemark
-    const {title, url, category, image} = data.markdownRemark.frontmatter
+    const {title, image} = data.markdownRemark.frontmatter
     const img = getImage(image);
 
     return (
@@ -29,7 +29,7 @@ const SinglePost = ({data}) => {
 
 // export const Head = () => <Seo title={title}/>
 
-export default SinglePost;
+export default SinglePost
 
 export const query = graphql`
     query PostQuery($url: String) {
